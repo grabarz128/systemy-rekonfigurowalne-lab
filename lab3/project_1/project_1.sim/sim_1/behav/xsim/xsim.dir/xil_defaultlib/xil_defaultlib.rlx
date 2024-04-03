@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/kuba/Desktop/lab3/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/kuba/Desktop/lab3/project_1/project_1.srcs/sim_1/new/tb_machine_state.v,1710871764,verilog,,,,tb_machine_state,,,,,,,,
+C:/Users/kuba/Desktop/lab3/project_1/project_1.srcs/sources_1/new/load_file.v,1710873832,verilog,,C:/Users/kuba/Desktop/lab3/project_1/project_1.srcs/sources_1/new/machine_state.v,,load_file,,,,,,,,
+C:/Users/kuba/Desktop/lab3/project_1/project_1.srcs/sources_1/new/machine_state.v,1710870329,verilog,,C:/Users/kuba/Desktop/lab3/project_1/project_1.srcs/sources_1/new/save.v,,machine_state,,,,,,,,
+C:/Users/kuba/Desktop/lab3/project_1/project_1.srcs/sources_1/new/save.v,1710872574,verilog,,C:/Users/kuba/Desktop/lab3/project_1/project_1.srcs/sim_1/new/tb_machine_state.v,,save,,,,,,,,

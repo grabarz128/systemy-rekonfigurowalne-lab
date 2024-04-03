@@ -1,0 +1,309 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Mar 27 16:06:04 2024
+# Process ID: 14618
+# Current directory: /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1
+# Command line: vivado -log hdmi_vga_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_vga_wrapper.tcl
+# Log file: /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/hdmi_vga_wrapper.vds
+# Journal file: /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/vivado.jou
+# Running On: lsriw-kasprowy, OS: Linux, CPU Frequency: 2200.000 MHz, CPU Physical cores: 24, Host memory: 67328 MB
+#-----------------------------------------------------------
+source hdmi_vga_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+Command: synth_design -top hdmi_vga_wrapper -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14680
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2447.082 ; gain = 368.730 ; free physical = 52375 ; free virtual = 59389
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1890.360; parent = 1680.412; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3457.277; parent = 2450.055; children = 1007.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hdmi_vga_wrapper' [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_vga' [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/synth/hdmi_vga.v:12]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_vga_clk_wiz_0_0' [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-14618-lsriw-kasprowy/realtime/hdmi_vga_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_vga_clk_wiz_0_0' (0#1) [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-14618-lsriw-kasprowy/realtime/hdmi_vga_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_vga_dvi2rgb_0_0' [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-14618-lsriw-kasprowy/realtime/hdmi_vga_dvi2rgb_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_vga_dvi2rgb_0_0' (0#1) [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-14618-lsriw-kasprowy/realtime/hdmi_vga_dvi2rgb_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'aPixelClkLckd' of module 'hdmi_vga_dvi2rgb_0_0' is unconnected for instance 'dvi2rgb_0' [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/synth/hdmi_vga.v:97]
+WARNING: [Synth 8-7071] port 'pLocked' of module 'hdmi_vga_dvi2rgb_0_0' is unconnected for instance 'dvi2rgb_0' [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/synth/hdmi_vga.v:97]
+WARNING: [Synth 8-7023] instance 'dvi2rgb_0' of module 'hdmi_vga_dvi2rgb_0_0' has 20 connections declared, but only 18 given [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/synth/hdmi_vga.v:97]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_vga_rgb2vga_0_0' [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-14618-lsriw-kasprowy/realtime/hdmi_vga_rgb2vga_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_vga_rgb2vga_0_0' (0#1) [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-14618-lsriw-kasprowy/realtime/hdmi_vga_rgb2vga_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_vga_xlconstant_0_0' [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_0/synth/hdmi_vga_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_vga_xlconstant_0_0' (0#1) [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_0/synth/hdmi_vga_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_vga_xlconstant_1_0' [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconstant_1_0/synth/hdmi_vga_xlconstant_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (0#1) [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_vga_xlconstant_1_0' (0#1) [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconstant_1_0/synth/hdmi_vga_xlconstant_1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_vga' (0#1) [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/synth/hdmi_vga.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_vga_wrapper' (0#1) [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2527.020 ; gain = 448.668 ; free physical = 52462 ; free virtual = 59477
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1890.360; parent = 1680.412; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3534.246; parent = 2527.023; children = 1007.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2544.832 ; gain = 466.480 ; free physical = 52460 ; free virtual = 59475
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1890.360; parent = 1680.412; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3552.059; parent = 2544.836; children = 1007.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2544.832 ; gain = 466.480 ; free physical = 52460 ; free virtual = 59475
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1890.360; parent = 1680.412; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3552.059; parent = 2544.836; children = 1007.223
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2550.770 ; gain = 0.000 ; free physical = 52461 ; free virtual = 59477
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_in_context.xdc] for cell 'hdmi_vga_i/dvi2rgb_0'
+Finished Parsing XDC File [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_in_context.xdc] for cell 'hdmi_vga_i/dvi2rgb_0'
+Parsing XDC File [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_rgb2vga_0_0/hdmi_vga_rgb2vga_0_0/hdmi_vga_rgb2vga_0_0_in_context.xdc] for cell 'hdmi_vga_i/rgb2vga_0'
+Finished Parsing XDC File [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_rgb2vga_0_0/hdmi_vga_rgb2vga_0_0/hdmi_vga_rgb2vga_0_0_in_context.xdc] for cell 'hdmi_vga_i/rgb2vga_0'
+Parsing XDC File [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_in_context.xdc] for cell 'hdmi_vga_i/clk_wiz_0'
+Finished Parsing XDC File [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_in_context.xdc] for cell 'hdmi_vga_i/clk_wiz_0'
+Parsing XDC File [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
+Finished Parsing XDC File [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hdmi_vga_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/hdmi_vga_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2642.613 ; gain = 0.000 ; free physical = 52374 ; free virtual = 59389
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2642.613 ; gain = 0.000 ; free physical = 52374 ; free virtual = 59389
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2642.613 ; gain = 564.262 ; free physical = 52434 ; free virtual = 59450
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1890.360; parent = 1680.412; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3617.824; parent = 2610.602; children = 1007.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2642.613 ; gain = 564.262 ; free physical = 52434 ; free virtual = 59450
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1890.360; parent = 1680.412; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3617.824; parent = 2610.602; children = 1007.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_clk_n. (constraint file  /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_clk_n. (constraint file  /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_clk_p. (constraint file  /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_clk_p. (constraint file  /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[0]. (constraint file  /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[0]. (constraint file  /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[1]. (constraint file  /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[1]. (constraint file  /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[2]. (constraint file  /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[2]. (constraint file  /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[0]. (constraint file  /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[0]. (constraint file  /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[1]. (constraint file  /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[1]. (constraint file  /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[2]. (constraint file  /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[2]. (constraint file  /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  /home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for hdmi_vga_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hdmi_vga_i/dvi2rgb_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hdmi_vga_i/rgb2vga_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hdmi_vga_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hdmi_vga_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hdmi_vga_i/xlconstant_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2642.613 ; gain = 564.262 ; free physical = 52434 ; free virtual = 59450
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1890.360; parent = 1680.412; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3617.824; parent = 2610.602; children = 1007.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2642.613 ; gain = 564.262 ; free physical = 52434 ; free virtual = 59451
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1890.360; parent = 1680.412; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3617.824; parent = 2610.602; children = 1007.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2642.613 ; gain = 564.262 ; free physical = 52422 ; free virtual = 59442
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1890.360; parent = 1680.412; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3617.824; parent = 2610.602; children = 1007.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2642.613 ; gain = 564.262 ; free physical = 52305 ; free virtual = 59325
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1972.811; parent = 1763.431; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3617.824; parent = 2610.602; children = 1007.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2642.613 ; gain = 564.262 ; free physical = 52305 ; free virtual = 59325
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1972.988; parent = 1763.629; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3617.824; parent = 2610.602; children = 1007.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2642.613 ; gain = 564.262 ; free physical = 52299 ; free virtual = 59319
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1973.387; parent = 1764.027; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3617.824; parent = 2610.602; children = 1007.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2642.613 ; gain = 564.262 ; free physical = 52296 ; free virtual = 59316
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1973.535; parent = 1764.176; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3617.824; parent = 2610.602; children = 1007.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2642.613 ; gain = 564.262 ; free physical = 52296 ; free virtual = 59316
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1973.551; parent = 1764.191; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3617.824; parent = 2610.602; children = 1007.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2642.613 ; gain = 564.262 ; free physical = 52296 ; free virtual = 59316
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1973.566; parent = 1764.207; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3617.824; parent = 2610.602; children = 1007.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2642.613 ; gain = 564.262 ; free physical = 52296 ; free virtual = 59316
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1973.566; parent = 1764.207; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3617.824; parent = 2610.602; children = 1007.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2642.613 ; gain = 564.262 ; free physical = 52296 ; free virtual = 59316
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1973.566; parent = 1764.207; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3617.824; parent = 2610.602; children = 1007.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2642.613 ; gain = 564.262 ; free physical = 52296 ; free virtual = 59316
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1973.582; parent = 1764.223; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3617.824; parent = 2610.602; children = 1007.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------+----------+
+|      |BlackBox name        |Instances |
++------+---------------------+----------+
+|1     |hdmi_vga_clk_wiz_0_0 |         1|
+|2     |hdmi_vga_dvi2rgb_0_0 |         1|
+|3     |hdmi_vga_rgb2vga_0_0 |         1|
++------+---------------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |hdmi_vga_clk_wiz_0 |     1|
+|2     |hdmi_vga_dvi2rgb_0 |     1|
+|3     |hdmi_vga_rgb2vga_0 |     1|
+|4     |IOBUF              |     2|
+|5     |OBUF               |    20|
++------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2642.613 ; gain = 564.262 ; free physical = 52296 ; free virtual = 59316
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1973.613; parent = 1764.254; children = 209.948
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3617.824; parent = 2610.602; children = 1007.223
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2642.613 ; gain = 466.480 ; free physical = 52352 ; free virtual = 59372
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2642.613 ; gain = 564.262 ; free physical = 52352 ; free virtual = 59372
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2642.613 ; gain = 0.000 ; free physical = 52346 ; free virtual = 59367
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2642.613 ; gain = 0.000 ; free physical = 52398 ; free virtual = 59418
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Synth Design complete, checksum: 2b3f36da
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2642.613 ; gain = 874.535 ; free physical = 52599 ; free virtual = 59620
+INFO: [Common 17-1381] The checkpoint '/home/lsriw/Desktop/jakub_grabowski/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/hdmi_vga_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file hdmi_vga_wrapper_utilization_synth.rpt -pb hdmi_vga_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 27 16:06:35 2024...

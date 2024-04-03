@@ -31,22 +31,24 @@ output send
     reg set_read = 1'b0;
     initial
     begin
-        file=$fopen("ifile_path","rb");
+        file=$fopen("C:/Users/kuba/Desktop/lab3/project_1/wejscie.txt","rb");
         for(i=0;i<16;i=i+1)
         begin
             data_read=$fgetc(file);
+            #24;
         end
         $fclose(file);
      end
      
      always 
      begin
+        #2;
         set_read = 1'b1;
-        #1;
+        #2;
         set_read = 1'b0;
-        #10;
+        #20;
      end
      
-    assign data=data_read;
+    assign data = data_read;
     assign send = set_read;
 endmodule
